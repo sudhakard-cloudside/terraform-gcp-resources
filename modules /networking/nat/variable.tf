@@ -4,15 +4,18 @@ variable "project_id" {
 }
 
 variable "nat_name" {
-  default = "pw-ops-use1-nat-gw"
+  type        = string
+  description = "Name of the nat"
 }
 variable "org" {
-  default = "pw"
+   type        = string
+   description = "Name of the org"
 }
 variable "env" {}
 variable "use_case" {}
 variable "region_code" {
-  default = "use1"
+  type        = string
+  description = "Name of the region-code"
 }
 
 variable "region" {
